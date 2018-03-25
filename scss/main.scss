@@ -1,9 +1,9 @@
-$duration: 2s;
+// $duration: 2s;
 body {
   background: #E0113A;
 }
 .container {
-  position:absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   width: 200px;
@@ -16,7 +16,7 @@ body {
   top: 0;
   left: 0;
 }
-.circle-container:after{
+.circle-container::after{
   content: '';
   top: auto;
   position: absolute;
@@ -26,6 +26,20 @@ body {
   height: .25em;
   width: 1em;
   border-radius: 50%;
+  background-color: #034466;
   opacity: 0.3;
-  animation: shadow $duration infinate linear;
+  animation: shadow $duration infinite linear;
+}
+.circle {
+  margin: auto;
+  left: -9999px;
+  right: -9999px;
+  top: -9999px;
+  bottom: -9999px
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius:50%;
+  background: #fff;
+  animation: animation $duration infinite linear;
 }
