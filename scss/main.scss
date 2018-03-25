@@ -5,7 +5,7 @@ body {
 .container {
   position:absolute;
   top: 50%;
-  left: 50;
+  left: 50%;
   width: 200px;
   height: 120px;
 }
@@ -15,4 +15,17 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+.circle-container:after{
+  content: '';
+  top: auto;
+  position: absolute;
+  display: block;
+  bottom: 0em;
+  left: cal(50% - 0.5em);
+  height: .25em;
+  width: 1em;
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: shadow $duration infinate linear;
 }
